@@ -1,0 +1,83 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #FBF5F3;
+}
+/*.bodySearch {
+    background-color: #00192A;
+}*/
+
+h1 {
+    color: #FBF5F3;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+h2 {
+    color: #000C14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* NAV */
+.topNav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #004777;
+}
+.topNav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.topNavLeft {
+    float: left;
+    list-style: none;
+}
+.topNavLeft li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.topNavRight {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.logoNav {}
+
+/* BUTTONS */
+.randomizerButton {
+    color: #FBF5F3;
+    background-color: #22A6FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px 20px;
+}
+.randomizerButton:hover {
+    background-color: #008CE9;
+}
+
+/* SEARCHBARS */
+.barSearch {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: black;
+    background-color: #FBF5F3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 8px;
+    border-style: solid;
+    padding: 10px 15px;
+}
