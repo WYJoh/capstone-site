@@ -1,6 +1,7 @@
 import * as React from "react"
 import Default from "../layouts/default.js"
 import Popular from "../components/popularlist.js"
+import Container from "../components/container12.js"
 import '../style/index.scss';
 import { graphql } from "gatsby"
 
@@ -8,8 +9,9 @@ import { graphql } from "gatsby"
 const IndexPage = ({ data }) => {
   return (
     <Default>
-      <h2>POPULAR THIS WEEK</h2>
-
+      <Container>
+        <h2>POPULAR THIS WEEK</h2>
+      </Container>
       {data.allContentfulAlbums.nodes.map(album => (
         <Popular album={album}></Popular>
       ))}
@@ -18,7 +20,9 @@ const IndexPage = ({ data }) => {
         <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
       </div>
 
-      <h2>HIGHEST RATED ALL-TIME</h2>
+      <Container>
+        <h2>HIGHEST RATED ALL-TIME</h2>
+      </Container>
     </Default>
   )
 }
@@ -29,6 +33,7 @@ export const query = graphql`
 query MyQuery {
   allContentfulAlbums {
     nodes {
+      id
       artist {
         artist
       }

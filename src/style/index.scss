@@ -1,6 +1,7 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
 
 body {
     background-color: #FBF5F3;
@@ -11,8 +12,8 @@ body {
 
 h1 {
     color: #FBF5F3;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 60px;
     letter-spacing: 3px;
     margin-bottom: 0;
 }
@@ -22,7 +23,23 @@ h2 {
     font-size: 50px;
     letter-spacing: 1.5px;
     margin-top: 10px;
-    margin-left: 10px;
+}
+h3 {
+    color: #000C14;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+}
+h4 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
 }
 
 /* NAV */
@@ -52,10 +69,41 @@ h2 {
 }
 .logoNav {}
 
+.botNav {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #004777;
+}
+.botNav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.botNavMid {
+    float: left;
+    list-style: none;
+    padding-top: 10px;
+}
+.botNavRight {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+/* IMG */
+.albumImgSm {
+    height: 175px;
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* BUTTONS */
 .randomizerButton {
     color: #FBF5F3;
-    background-color: #22A6FF;
+    background-color: #F32020;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     border-radius: 8px;
@@ -63,7 +111,19 @@ h2 {
     padding: 10px 20px;
 }
 .randomizerButton:hover {
-    background-color: #008CE9;
+    background-color: #CE1A1A;
+}
+.contactButton {
+    color: #FBF5F3;
+    background-color: #F32020;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 5px 10px;
+}
+.contactButton:hover {
+    background-color: #CE1A1A;
 }
 
 /* SEARCHBARS */
@@ -80,4 +140,21 @@ h2 {
     border-radius: 8px;
     border-style: solid;
     padding: 10px 15px;
+}
+
+/* FORM */
+form {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formStyle {
+    display: block;
+    text-align: center;
+    background-color: #cfcfcf;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }

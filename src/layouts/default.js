@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/header.js"
-
+import Footer from "../components/footer.js";
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Default({children}) {
@@ -8,6 +8,7 @@ export default function Default({children}) {
         <>
             <Header></Header>
             {children}
+            <Footer></Footer>
         </>
     )
 }

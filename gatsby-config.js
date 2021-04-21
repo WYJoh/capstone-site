@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Capstone Site",
+    title: "Disc Hierarchy",
   },
   plugins: [
     {

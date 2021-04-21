@@ -1,14 +1,16 @@
 import * as React from "react"
-import Default from "../layouts/default.js"
+import { Link } from "gatsby"
 
 export default function Search() {
     return (
         <>
-        <Default>
+            <Link to="/">
+                <h4>Return to Home (arrow icon)</h4>
+            </Link>
+
             <div className="bodySearch">
                 <input type="search" className="barSearch" placeholder="Search for Artist or Album..." />
             </div>
-        </Default>
         </>
     )
 }
