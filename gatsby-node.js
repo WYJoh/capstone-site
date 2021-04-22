@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         }
     `)
-    const productTemplate = path.resolve(`src/pages/album.js`)
+    const productTemplate = path.resolve(`src/templates/album.js`)
     queryResults.data.allContentfulAlbums.nodes.forEach(node => {
         createPage({
             path: `/album/${node.id}`,

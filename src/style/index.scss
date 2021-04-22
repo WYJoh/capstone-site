@@ -128,10 +128,7 @@ p {
 
 /* SEARCHBARS */
 .barSearch {
-    width: 60%;
-    position: absolute;
-    top: 40%;
-    left: 20%;
+    width: 400px;
     color: black;
     background-color: #FBF5F3;
     font-family: 'Montserrat', sans-serif;
@@ -139,6 +136,9 @@ p {
     border-color: black;
     border-radius: 8px;
     border-style: solid;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 15px;
 }
 
@@ -152,9 +152,105 @@ form {
 .formStyle {
     display: block;
     text-align: center;
-    background-color: #cfcfcf;
+    background-color: #DAD4D3;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+/* ALBUM */
+.albumTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+.albumStyle {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.albumStyleInner {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.albumImgLg {
+    height: 350px;
+    width: 350px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    margin: 0 10px;
+}
+.rightCenterAlbum {
+    display: block;
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    background-color: #DAD4D3;
+    margin: 0 10px;
+    padding: 0 15px;
+}
+.albumDesc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+hr {
+    border-color: #BBBBBB;
+    border-width: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.albumDescTrack {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: left;
+}
+.albumTracklist {
+    background-color: #A8A4A3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    height: 105px;
+    overflow-y: auto;
+    padding: 5px;
+}
+.albumTracklist::-webkit-scrollbar {
+    width: 10px;
+}
+.albumTracklist::-webkit-scrollbar-thumb {
+    background: #004777;
+}
+.albumTracklist::-webkit-scrollbar-thumb:hover {
+    background: #003457;
+}
+.albumTracklist::-webkit-scrollbar-track {
+    background: #868382;
+}
+.albumButton {
+    color: #FBF5F3;
+    background-color: #F32020;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px 20px;
+}
+
+/* SLIDER */
+.itemslider {
+    display: inline-block;
+    width: 200px;
+}
+.albumSlider {
+    overflow-x: scroll;
+}
+
+/* SEARCH */
+.searchPage {
+    background-color: blue;
 }

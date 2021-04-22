@@ -5,16 +5,18 @@ import Container from "../components/container12.js"
 import '../style/index.scss';
 import { graphql } from "gatsby"
 
-// markup
 const IndexPage = ({ data }) => {
   return (
     <Default>
       <Container>
         <h2>POPULAR THIS WEEK</h2>
       </Container>
-      {data.allContentfulAlbums.nodes.map(album => (
-        <Popular album={album}></Popular>
-      ))}
+
+      <div className="albumSlider">
+        {data.allContentfulAlbums.nodes.map(album => (
+          <Popular album={album}></Popular>
+        ))}
+      </div>
 
       <div className="text-center">
         <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
