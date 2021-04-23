@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// to-do: more -> <Link to="/"></Link>
-// to-do: fontawesome plug-ins
+import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 
 export default function Header() {
     return (
@@ -10,7 +9,7 @@ export default function Header() {
                 <ul className="topNavLeft">
                     <li>
                         <Link to="/">
-                            <img src="../images/musicnote.png" alt="logo" className="logoNav" />
+                            <p>LINK</p>
                         </Link>
                     </li>
                     <li>
@@ -21,7 +20,7 @@ export default function Header() {
                 <ul className="topNavRight">
                     <li>
                         <Link to="/search">
-                            <p>SEARCH</p>
+                            <FaSearch />
                         </Link>
                     </li>
                 </ul>

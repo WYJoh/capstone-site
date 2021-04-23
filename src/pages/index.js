@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       </div>
 
       <div className="text-center">
-        <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
+          <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
       </div>
 
       <Container>
@@ -38,6 +38,22 @@ query MyQuery {
       id
       artist {
         artist
+        id
+        albums {
+          id
+          title
+          year
+          cover {
+            file {
+              url
+            }
+          }
+        }
+        image {
+          file {
+            url
+          }
+        }
       }
       title
       tracks {
