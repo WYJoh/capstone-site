@@ -37,6 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
                             url
                         }
                     }
+                    rating
                 }
             }
         }
@@ -86,6 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
                             url
                         }
                     }
+                    rating
                 }
             }
         }

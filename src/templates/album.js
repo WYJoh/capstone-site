@@ -19,7 +19,7 @@ export default function Album({ pageContext }) {
                             </Link>
 
                             <h3 className="albumDesc">({album.year})</h3>
-                            <h3 className="albumDesc">[ rating icon ]</h3>
+                            <h3 className="albumDesc">{album.rating} / 5</h3>
                             <hr></hr>
                             <h3 className="albumDescTrack"><b>TRACKLIST</b></h3>
                             <h4 className="albumTracklist"><b>{album.tracks.tracks}</b></h4>

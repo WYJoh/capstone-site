@@ -6,9 +6,6 @@
 body {
     background-color: #FBF5F3;
 }
-/*.bodySearch {
-    background-color: #00192A;
-}*/
 
 h1 {
     color: #FBF5F3;
@@ -118,9 +115,9 @@ p {
 .albumImgSm {
     height: 175px;
     width: 175px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 /* BUTTONS */
@@ -131,6 +128,7 @@ p {
     font-size: 30px;
     border-radius: 8px;
     border-style: none;
+    margin: 30px 0;
     padding: 10px 20px;
 }
 .randomizerButton:hover {
@@ -147,22 +145,6 @@ p {
 }
 .contactButton:hover {
     background-color: #CE1A1A;
-}
-
-/* SEARCHBARS */
-.barSearch {
-    width: 400px;
-    color: black;
-    background-color: #FBF5F3;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    border-color: black;
-    border-radius: 8px;
-    border-style: solid;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 15px;
 }
 
 /* FORM */
@@ -291,15 +273,71 @@ hr {
 }
 
 /* SLIDER */
+.albumSlider {
+    background-color: #DAD4D3;
+    overflow-y: hidden;
+    height: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px 0;
+}
 .itemslider {
     display: inline-block;
     width: 200px;
-}
-.albumSlider {
-    overflow-x: scroll;
+    vertical-align: text-top;
 }
 
 /* SEARCH */
-.searchPage {
-    background-color: blue;
+.returnHome {
+    color: #FBF5F3;
+    background-color: #004777;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px 0;
+}
+.returnHome:hover {
+    color: #C4BEBD;
+}
+.bodySearch {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.barSearch {
+    width: 450px;
+    color: black;
+    background-color: #FBF5F3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 8px;
+    border-style: solid;
+    margin-top: 200px;
+    padding: 10px 15px;
+}
+.barSearch:focus {
+    outline: none;
+}
+.searchButton {
+    color: #FBF5F3;
+    background-color: #004777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    border-color: black;
+    border-radius: 8px;
+    border-style: solid;
+    margin-left: 5px;
+    padding: 10px 15px;
+}
+.searchButton:hover {
+    background-color: #003457;
+}
+
+/* CONTACT PG */
+.contactDesc {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
 }

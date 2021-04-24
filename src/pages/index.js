@@ -1,6 +1,7 @@
 import * as React from "react"
 import Default from "../layouts/default.js"
 import Popular from "../components/popularlist.js"
+import Alltime from "../components/alltimelist.js"
 import Container from "../components/container12.js"
 import '../style/index.scss';
 import { graphql } from "gatsby"
@@ -25,6 +26,12 @@ const IndexPage = ({ data }) => {
       <Container>
         <h2>HIGHEST RATED ALL-TIME</h2>
       </Container>
+
+      <div className="albumSlider">
+        {data.allContentfulAlbums.nodes.map(album => (
+          <Alltime album={album}></Alltime>
+        ))}
+      </div>
     </Default>
   )
 }
@@ -65,6 +72,7 @@ query MyQuery {
           url
         }
       }
+      rating
     }
   }
 }

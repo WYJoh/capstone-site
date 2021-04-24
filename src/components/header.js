@@ -9,7 +9,7 @@ export default function Header() {
                 <ul className="topNavLeft">
                     <li>
                         <Link to="/">
-                            <p>LINK</p>
+                            <p>ICON</p>
                         </Link>
                     </li>
                     <li>
