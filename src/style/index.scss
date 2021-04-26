@@ -49,6 +49,28 @@ h1 {
     display: inline-block;
     width: 200px;
     vertical-align: text-top;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.albumImgSm {
+    height: 175px;
+    width: 175px;
+    border-color: $black;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.sliderText {
+    color: $black;
+    font-family: $secondaryfont;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.sliderText:hover {
+    color: $maindark;
 }
 
 h3 {
@@ -64,16 +86,6 @@ h4 {
     font-size: 20px;
     text-align: center;
     margin-top: 5px;
-}
-.sliderText {
-    color: $black;
-    font-family: $secondaryfont;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 5px;
-}
-.sliderText:hover {
-    color: $maindark;
 }
 p {
     color: $mainlight;
@@ -144,15 +156,6 @@ p {
     color: $mainlight;
     font-family: $primaryfont;
     font-size: 20px;
-}
-
-/* IMG */
-.albumImgSm {
-    height: 175px;
-    width: 175px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 /* BUTTONS */
