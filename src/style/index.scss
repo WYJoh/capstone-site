@@ -3,51 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
 
+@import "theme";
+@import "font";
+
 body {
-    background-color: #FBF5F3;
+    background-color: $mainlight;
 }
 
 h1 {
-    color: #FBF5F3;
-    font-family: 'Racing Sans One', cursive;
+    color: $mainlight;
+    font-family: $titlefont;
     font-size: 60px;
     letter-spacing: 3px;
     margin-bottom: 0;
 }
 h2 {
-    color: #000C14;
-    font-family: 'Montserrat', sans-serif;
+    color: $headingdark;
+    font-family: $primaryfont;
     font-size: 50px;
     letter-spacing: 1.5px;
     margin-top: 10px;
 }
 h3 {
-    color: #000C14;
-    font-family: 'Montserrat', sans-serif;
+    color: $headingdark;
+    font-family: $primaryfont;
     font-size: 35px;
     letter-spacing: 1.5px;
     margin-top: 20px;
 }
 h4 {
-    color: #000000;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    color: $black;
+    font-family: $secondaryfont;
     font-size: 20px;
     text-align: center;
     margin-top: 5px;
 }
 .sliderText {
-    color: #000000;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    color: $black;
+    font-family: $secondaryfont;
     font-size: 20px;
     text-align: center;
     margin-top: 5px;
 }
 .sliderText:hover {
-    color: #004777;
+    color: $maindark;
 }
 p {
-    color: #FBF5F3;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    font-family: $primaryfont;
     font-size: 22px;
 }
 
@@ -55,7 +58,7 @@ p {
 .topNav {
     width: 100%;
     margin: 0 auto;
-    background-color: #004777;
+    background-color: $maindark;
 }
 .topNav::after {
     content: "";
@@ -82,7 +85,7 @@ p {
 .botNav {
     width: 100%;
     margin-top: 20px;
-    background-color: #004777;
+    background-color: $maindark;
 }
 .botNav::after {
     content: "";
@@ -106,8 +109,8 @@ p {
     margin-left: 20px;
 }
 .botComment {
-    color: #FBF5F3;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    font-family: $primaryfont;
     font-size: 20px;
 }
 
@@ -122,9 +125,9 @@ p {
 
 /* BUTTONS */
 .randomizerButton {
-    color: #FBF5F3;
-    background-color: #F32020;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    background-color: $button;
+    font-family: $primaryfont;
     font-size: 30px;
     border-radius: 8px;
     border-style: none;
@@ -132,19 +135,19 @@ p {
     padding: 10px 20px;
 }
 .randomizerButton:hover {
-    background-color: #CE1A1A;
+    background-color: $buttonhover;
 }
 .contactButton {
-    color: #FBF5F3;
-    background-color: #F32020;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    background-color: $button;
+    font-family: $primaryfont;
     font-size: 15px;
     border-radius: 8px;
     border-style: none;
     padding: 5px 10px;
 }
 .contactButton:hover {
-    background-color: #CE1A1A;
+    background-color: $buttonhover;
 }
 
 /* FORM */
@@ -157,8 +160,8 @@ form {
 .formStyle {
     display: block;
     text-align: center;
-    background-color: #DAD4D3;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: $secondarylight;
+    font-family: $secondaryfont;
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -166,7 +169,7 @@ form {
 
 /* ALBUM PG */
 .albumTitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primaryfont;
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
@@ -185,7 +188,7 @@ form {
 .albumImgLg {
     height: 350px;
     width: 350px;
-    border-color: black;
+    border-color: $black;
     border-style: solid;
     border-width: 3px;
     margin: 0 10px;
@@ -195,32 +198,32 @@ form {
     text-align: center;
     height: 350px;
     width: 350px;
-    background-color: #DAD4D3;
+    background-color: $secondarylight;
     margin: 0 10px;
     padding: 0 15px;
 }
 .albumDesc {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primaryfont;
     font-size: 25px;
     text-align: left;
 }
 .albumDesc:hover {
-    color: #004777;
+    color: $maindark;
 }
 hr {
-    border-color: #BBBBBB;
+    border-color: $secondarydark;
     border-width: 1px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .albumDescTrack {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primaryfont;
     font-size: 25px;
     text-align: left;
 }
 .albumTracklist {
-    background-color: #A8A4A3;
-    font-family: 'Montserrat', sans-serif;
+    background-color: $secondarydark;
+    font-family: $primaryfont;
     font-size: 16px;
     text-align: left;
     height: 110px;
@@ -232,18 +235,18 @@ hr {
     width: 10px;
 }
 .albumTracklist::-webkit-scrollbar-thumb {
-    background: #004777;
+    background: $maindark;
 }
 .albumTracklist::-webkit-scrollbar-thumb:hover {
-    background: #003457;
+    background: $maidarkhover;
 }
 .albumTracklist::-webkit-scrollbar-track {
-    background: #868382;
+    background: $secondarytrack;
 }
 .albumButton {
-    color: #FBF5F3;
-    background-color: #F32020;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    background-color: $button;
+    font-family: $primaryfont;
     font-size: 15px;
     border-radius: 8px;
     border-style: none;
@@ -252,7 +255,7 @@ hr {
 
 /* ARTIST PG */
 .artistTitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $primaryfont;
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
@@ -266,7 +269,7 @@ hr {
 .artistImgLg {
     height: 400px;
     width: 400px;
-    border-color: black;
+    border-color: $black;
     border-style: solid;
     border-width: 3px;
     margin: 0 10px;
@@ -274,7 +277,7 @@ hr {
 
 /* SLIDER */
 .albumSlider {
-    background-color: #DAD4D3;
+    background-color: $secondarylight;
     overflow-y: hidden;
     height: 320px;
     margin-top: 15px;
@@ -289,16 +292,16 @@ hr {
 
 /* SEARCH */
 .returnHome {
-    color: #FBF5F3;
-    background-color: #004777;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    color: $mainlight;
+    background-color: $maindark;
+    font-family: $secondaryfont;
     font-size: 20px;
     text-align: center;
     margin-top: 5px;
     padding: 10px 0;
 }
 .returnHome:hover {
-    color: #C4BEBD;
+    color: $secondarydark;
 }
 .bodySearch {
     margin-left: auto;
@@ -307,11 +310,11 @@ hr {
 }
 .barSearch {
     width: 450px;
-    color: black;
-    background-color: #FBF5F3;
-    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    background-color: $mainlight;
+    font-family: $primaryfont;
     font-size: 25px;
-    border-color: black;
+    border-color: $black;
     border-radius: 8px;
     border-style: solid;
     margin-top: 200px;
@@ -321,23 +324,23 @@ hr {
     outline: none;
 }
 .searchButton {
-    color: #FBF5F3;
-    background-color: #004777;
-    font-family: 'Montserrat', sans-serif;
+    color: $mainlight;
+    background-color: $maindark;
+    font-family: $primaryfont;
     font-size: 25px;
-    border-color: black;
+    border-color: $black;
     border-radius: 8px;
     border-style: solid;
     margin-left: 5px;
     padding: 10px 15px;
 }
 .searchButton:hover {
-    background-color: #003457;
+    background-color: $maidarkhover;
 }
 
 /* CONTACT PG */
 .contactDesc {
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-family: $primaryfont;
     font-size: 22px;
 }
