@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <Default>
             <Container>
-                <h2>ABOUT US</h2>
+                <h2 className="contacth2">ABOUT US</h2>
             </Container>
             <div className="container">
                 <div className="row">

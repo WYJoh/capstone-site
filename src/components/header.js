@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { FaCompactDisc } from "@react-icons/all-files/fa/FaCompactDisc";
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 
 export default function Header() {
@@ -7,13 +8,15 @@ export default function Header() {
         <>
             <div className="topNav">
                 <ul className="topNavLeft">
-                    <li>
-                        <Link to="/">
-                            <p>ICON</p>
+                    <li className="iconAlign">
+                        <Link to="/" style={{ textDecoration: 'none'}}>
+                            <FaCompactDisc style={{ color: '#FBF5F3'}} />
                         </Link>
                     </li>
                     <li>
-                        <h1>Disc Hierarchy</h1>
+                        <Link to="/" style={{ textDecoration: 'none'}}>
+                            <h1>Disc Hierarchy</h1>
+                        </Link>
                     </li>
                 </ul>
 

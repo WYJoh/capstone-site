@@ -2,16 +2,15 @@ import * as React from "react"
 import Default from "../layouts/default.js"
 import Popular from "../components/popularlist.js"
 import Alltime from "../components/alltimelist.js"
-import Container from "../components/container12.js"
 import '../style/index.scss';
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }) => {
   return (
     <Default>
-      <Container>
-        <h2>POPULAR THIS WEEK</h2>
-      </Container>
+
+        <h2 className="indexh2">POPULAR THIS WEEK</h2>
+
 
       <div className="albumSlider">
         {data.allContentfulAlbums.nodes.map(album => (
@@ -23,9 +22,9 @@ const IndexPage = ({ data }) => {
           <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
       </div>
 
-      <Container>
-        <h2>HIGHEST RATED ALL-TIME</h2>
-      </Container>
+
+        <h2 className="indexh2">HIGHEST RATED ALL-TIME</h2>
+
 
       <div className="albumSlider">
         {data.allContentfulAlbums.nodes.map(album => (

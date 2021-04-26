@@ -17,19 +17,46 @@ h1 {
     letter-spacing: 3px;
     margin-bottom: 0;
 }
-h2 {
-    color: $headingdark;
-    font-family: $primaryfont;
+.contacth2 {
     font-size: 50px;
-    letter-spacing: 1.5px;
-    margin-top: 10px;
-}
-h3 {
     color: $headingdark;
     font-family: $primaryfont;
-    font-size: 35px;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
     margin-top: 20px;
+}
+.indexh2 {
+    font-size: 50px;
+    color: $mainlight;
+    font-family: $primaryfont;
+    letter-spacing: 3px;
+    background-color: $headingdark;
+    margin: 20px 20px 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    display: inline-block;
+}
+
+/* SLIDER */
+.albumSlider {
+    background-color: $secondarylight;
+    overflow-y: hidden;
+    height: 320px;
+    margin: 0 20px 20px;
+    padding: 20px 0 20px 10px;
+}
+.itemslider {
+    display: inline-block;
+    width: 200px;
+    vertical-align: text-top;
+}
+
+h3 {
+    font-size: 35px;
+    margin-top: 20px;
+    color: $headingdark;
+    font-family: $primaryfont;
+    letter-spacing: 1.5px;
 }
 h4 {
     color: $black;
@@ -68,10 +95,16 @@ p {
 .topNavLeft {
     float: left;
     list-style: none;
+    margin-bottom: 8px;
 }
 .topNavLeft li {
     display: inline-block;
     margin-left: 20px;
+}
+.iconAlign {
+    font-size: 35px;
+    float: left;
+    margin-top: 6px;
 }
 .topNavRight {
     font-size: 27px;
@@ -80,7 +113,6 @@ p {
     margin-top: 15px;
     margin-right: 40px;
 }
-.logoNav {}
 
 .botNav {
     width: 100%;
@@ -150,24 +182,7 @@ p {
     background-color: $buttonhover;
 }
 
-/* FORM */
-form {
-    display: inline-block;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-.formStyle {
-    display: block;
-    text-align: center;
-    background-color: $secondarylight;
-    font-family: $secondaryfont;
-    font-size: 18px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-}
-
-/* ALBUM PG */
+/* ALBUM */
 .albumTitle {
     font-family: $primaryfont;
     font-size: 40px;
@@ -253,7 +268,7 @@ hr {
     padding: 10px 20px;
 }
 
-/* ARTIST PG */
+/* ARTIST */
 .artistTitle {
     font-family: $primaryfont;
     font-size: 40px;
@@ -273,21 +288,6 @@ hr {
     border-style: solid;
     border-width: 3px;
     margin: 0 10px;
-}
-
-/* SLIDER */
-.albumSlider {
-    background-color: $secondarylight;
-    overflow-y: hidden;
-    height: 320px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 20px 0;
-}
-.itemslider {
-    display: inline-block;
-    width: 200px;
-    vertical-align: text-top;
 }
 
 /* SEARCH */
@@ -343,4 +343,21 @@ hr {
     color: $black;
     font-family: $primaryfont;
     font-size: 22px;
+}
+
+/* FORM */
+form {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formStyle {
+    display: block;
+    text-align: center;
+    background-color: $secondarylight;
+    font-family: $secondaryfont;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
