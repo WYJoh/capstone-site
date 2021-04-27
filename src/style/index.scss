@@ -6,11 +6,93 @@
 @import "theme";
 @import "font";
 
-body {
-    background-color: $mainlight;
+.indexh1 {
+    color: $maindark;
+    font-family: $titlefont;
+    font-size: 110px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 175px;
+    //
+    animation: fade_in linear 8s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fade_in {
+    0% {
+        margin-top: 100px;
+        opacity: 0;
+    }
+    30% {
+        margin-top: 175px;
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
-h1 {
+.discComponents {
+    font-size: 130px;
+    text-align: center;
+}
+.discIcon {
+    animation: spin linear 8s 1;
+    animation-fill-mode: forwards;
+}
+@keyframes spin {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    34% {
+        transform: rotate(20deg);
+    }
+    38% {
+        transform: rotate(60deg);
+    }
+    42% {
+        transform: rotate(110deg);
+    }
+    46% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(260deg);
+    }
+    54% {
+        transform: rotate(360deg);
+    }
+    58% {
+        transform: rotate(520deg);
+    }
+    62% {
+        transform: rotate(720deg);
+    }
+    66% {
+        transform: rotate(1000deg);
+    }
+    70% {
+        transform: rotate(1500deg);
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(10000deg);
+    }
+}
+
+.homeh1 {
     color: $mainlight;
     font-family: $titlefont;
     font-size: 60px;
@@ -117,6 +199,17 @@ p {
     font-size: 35px;
     float: left;
     margin-top: 6px;
+}
+.discIconSm:hover {
+    animation: spin_sm 2s 1;
+}
+@keyframes spin_sm {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .topNavRight {
     font-size: 27px;

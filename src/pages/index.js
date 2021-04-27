@@ -1,78 +1,21 @@
 import * as React from "react"
-import Default from "../layouts/default.js"
-import Popular from "../components/popularlist.js"
-import Alltime from "../components/alltimelist.js"
+import { FaCompactDisc } from "@react-icons/all-files/fa/FaCompactDisc";
 import '../style/index.scss';
-import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
-    <Default>
-
-        <h2 className="indexh2">POPULAR THIS WEEK</h2>
-
-
-      <div className="albumSlider">
-        {data.allContentfulAlbums.nodes.map(album => (
-          <Popular album={album}></Popular>
-        ))}
-      </div>
-
-      <div className="text-center">
-          <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
-      </div>
-
-
-        <h2 className="indexh2">HIGHEST RATED ALL-TIME</h2>
-
-
-      <div className="albumSlider">
-        {data.allContentfulAlbums.nodes.map(album => (
-          <Alltime album={album}></Alltime>
-        ))}
-      </div>
-    </Default>
+    <>
+      <Helmet>
+        <meta http-equiv="refresh" content="8; url='/home'"/>
+      </Helmet>
+      <h1 className="indexh1">Disc Hierarchy</h1>
+      
+      <h2 className="discComponents">
+        <FaCompactDisc className="discIcon" style={{ color: '#001829'}} />
+      </h2>
+    </>
   )
 }
 
 export default IndexPage
-
-export const query = graphql`
-query MyQuery {
-  allContentfulAlbums {
-    nodes {
-      id
-      artist {
-        artist
-        id
-        albums {
-          id
-          title
-          year
-          cover {
-            file {
-              url
-            }
-          }
-        }
-        image {
-          file {
-            url
-          }
-        }
-      }
-      title
-      tracks {
-        tracks
-      }
-      year
-      cover {
-        file {
-          url
-        }
-      }
-      rating
-    }
-  }
-}
-`

@@ -9,13 +9,13 @@ export default function Header() {
             <div className="topNav">
                 <ul className="topNavLeft">
                     <li className="iconAlign">
-                        <Link to="/" style={{ textDecoration: 'none'}}>
-                            <FaCompactDisc style={{ color: '#FBF5F3'}} />
+                        <Link to="/home" style={{ textDecoration: 'none' }}>
+                            <FaCompactDisc className="discIconSm" style={{ color: '#FBF5F3'}} />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" style={{ textDecoration: 'none'}}>
-                            <h1>Disc Hierarchy</h1>
+                        <Link to="/home" style={{ textDecoration: 'none' }}>
+                            <h1 className="homeh1">Disc Hierarchy</h1>
                         </Link>
                     </li>
                 </ul>

@@ -6,7 +6,7 @@ import { FaChevronRight } from "@react-icons/all-files/fa/FaChevronRight";
 export default function Search() {
     return (
         <>
-            <Link to="/" style={{ textDecoration: 'none'}}>
+            <Link to="/home" style={{ textDecoration: 'none'}}>
                 <h4 className="returnHome">Return to Home</h4>
             </Link>
 
