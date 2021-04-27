@@ -354,14 +354,27 @@ hr {
 .albumTracklist::-webkit-scrollbar-track {
     background: $secondarytrack;
 }
-.albumButton {
-    color: $mainlight;
-    background-color: $button;
-    font-family: $primaryfont;
-    font-size: 15px;
-    border-radius: 8px;
-    border-style: none;
-    padding: 10px 20px;
+
+.faStar {
+    font-size: 30px;
+}
+.rateAlbum:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+.rateAlbum:not(:checked) > label {
+    width: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+    color: $secondarydark;
+}
+.rateAlbum > input:checked ~ label {
+    color: $buttonchecked;
+}
+.rateAlbum:not(:checked) > label:hover,
+.rateAlbum:not(:checked) > label:hover ~ label {
+    color: $button;
 }
 
 /* ARTIST */

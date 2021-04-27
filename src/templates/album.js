@@ -1,5 +1,6 @@
 import React from "react"
 import Default from "../layouts/default.js"
+import { FaStar } from "@react-icons/all-files/fa/FaStar";
 import { Link } from "gatsby"
 
 export default function Album({ pageContext }) {
@@ -28,8 +29,31 @@ export default function Album({ pageContext }) {
                 </div>
             </div>
 
-            <div className="text-center">
-                <button className="albumButton">RATE / REVIEW</button>
+            <div className="text-center rateAlbum">
+                <label for="1star" title="text">
+                    <input type="radio" className="1star" name="rate" value="1" style={{ display: 'none' }} />
+                    <FaStar className="faStar" />
+                </label>
+
+                <label for="2star" title="text">
+                    <input type="radio" className="2star" name="rate" value="2" style={{ display: 'none' }} />
+                    <FaStar className="faStar" />
+                </label>
+
+                <label for="3star" title="text">
+                    <input type="radio" className="3star" name="rate" value="3" style={{ display: 'none' }} />
+                    <FaStar className="faStar" />
+                </label>
+
+                <label for="4star" title="text">
+                    <input type="radio" className="4star" value="4" style={{ display: 'none' }} />
+                    <FaStar className="faStar" />
+                </label>
+
+                <label for="5star" title="text">
+                    <input type="radio" className="5star" name="rate" value="5" style={{ display: 'none' }} />
+                    <FaStar className="faStar" />
+                </label>
             </div>
         </Default>
     )
