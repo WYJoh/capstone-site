@@ -6,6 +6,10 @@
 @import "theme";
 @import "font";
 
+body {
+    background-color: $mainlight;
+}
+
 .indexh1 {
     color: $maindark;
     font-family: $titlefont;
@@ -122,10 +126,25 @@
 /* SLIDER */
 .albumSlider {
     background-color: $secondarylight;
+    overflow-x: scroll;
     overflow-y: hidden;
-    height: 320px;
+    white-space: nowrap;
+    height: 340px;
     margin: 0 20px 20px;
     padding: 20px 0 20px 10px;
+}
+.albumSlider::-webkit-scrollbar {
+    width: 10px;
+}
+.albumSlider::-webkit-scrollbar-thumb {
+    background: $maindark;
+    border-radius: 1em;
+}
+.albumSlider::-webkit-scrollbar-thumb:hover {
+    background: $maidarkhover;
+}
+.albumSlider::-webkit-scrollbar-track {
+    background: $secondarymedium;
 }
 .itemslider {
     display: inline-block;
@@ -149,6 +168,7 @@
     font-family: $secondaryfont;
     font-size: 20px;
     text-align: center;
+    white-space: normal;
     margin-top: 5px;
 }
 .sliderText:hover {
@@ -253,17 +273,22 @@ p {
 
 /* BUTTONS */
 .randomizerButton {
-    color: $mainlight;
-    background-color: $button;
+    color: $button;
     font-family: $primaryfont;
     font-size: 30px;
+    background-color: $mainlight;
+    border-color: $button;
     border-radius: 8px;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
     margin: 30px 0;
     padding: 10px 20px;
+    transition: 0.3s ease-out;
 }
 .randomizerButton:hover {
-    background-color: $buttonhover;
+    color: $mainlight;
+    background-color: $button;
+    transition: 0.3s ease-out;
 }
 .contactButton {
     color: $mainlight;
@@ -347,6 +372,7 @@ hr {
 }
 .albumTracklist::-webkit-scrollbar-thumb {
     background: $maindark;
+    border-radius: 1em;
 }
 .albumTracklist::-webkit-scrollbar-thumb:hover {
     background: $maidarkhover;
