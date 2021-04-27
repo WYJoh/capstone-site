@@ -103,6 +103,17 @@ body {
     letter-spacing: 3px;
     margin-bottom: 0;
 }
+.homeh2 {
+    font-size: 50px;
+    color: $mainlight;
+    font-family: $primaryfont;
+    letter-spacing: 3px;
+    background-color: $headingdark;
+    margin: 20px 20px 0 30px;
+    padding: 0 20px 0 20px;
+    width: auto;
+    display: inline-block;
+}
 .contacth2 {
     font-size: 50px;
     color: $headingdark;
@@ -110,26 +121,18 @@ body {
     letter-spacing: 3px;
     margin-top: 20px;
 }
-.indexh2 {
-    font-size: 50px;
-    color: $mainlight;
-    font-family: $primaryfont;
-    letter-spacing: 3px;
-    background-color: $headingdark;
-    margin: 20px 20px 0 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: auto;
-    display: inline-block;
-}
 
-/* SLIDER */
+// SLIDER
 .albumSlider {
     background-color: $secondarylight;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     height: 340px;
+    //border-top: $headingdark solid 10px;
+    border-right: $headingdark solid 10px;
+    //border-bottom: $headingdark solid 10px;
+    border-left: $headingdark solid 10px;
     margin: 0 20px 20px;
     padding: 20px 0 20px 10px;
 }
@@ -195,7 +198,7 @@ p {
     font-size: 22px;
 }
 
-/* NAV */
+// NAV
 .topNav {
     width: 100%;
     margin: 0 auto;
@@ -271,7 +274,7 @@ p {
     font-size: 20px;
 }
 
-/* BUTTONS */
+// BUTTONS
 .randomizerButton {
     color: $button;
     font-family: $primaryfont;
@@ -303,7 +306,7 @@ p {
     background-color: $buttonhover;
 }
 
-/* ALBUM */
+// ALBUM
 .albumTitle {
     font-family: $primaryfont;
     font-size: 40px;
@@ -403,7 +406,7 @@ hr {
     color: $button;
 }
 
-/* ARTIST */
+// ARTIST
 .artistTitle {
     font-family: $primaryfont;
     font-size: 40px;
@@ -425,7 +428,7 @@ hr {
     margin: 0 10px;
 }
 
-/* SEARCH */
+// SEARCH
 .returnHome {
     color: $mainlight;
     background-color: $maindark;
@@ -473,14 +476,14 @@ hr {
     background-color: $maidarkhover;
 }
 
-/* CONTACT PG */
+// CONTACT
 .contactDesc {
     color: $black;
     font-family: $primaryfont;
     font-size: 22px;
 }
 
-/* FORM */
+// FORM
 form {
     display: inline-block;
     text-align: left;

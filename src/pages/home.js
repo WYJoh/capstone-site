@@ -9,7 +9,7 @@ export default function Home({ data }) {
   return (
     <Default>
 
-        <h2 className="indexh2">POPULAR THIS WEEK</h2>
+        <h2 className="homeh2">POPULAR THIS WEEK</h2>
 
 
       <div className="albumSlider">
@@ -23,7 +23,7 @@ export default function Home({ data }) {
       </div>
 
 
-        <h2 className="indexh2">HIGHEST RATED ALL-TIME</h2>
+        <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
 
 
       <div className="albumSlider">
