@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const queryResults = await graphql(`
         query MyQuery {
-            allContentfulAlbums {
+            allContentfulAlbums (filter: {rating: {lte: 5}, node_locale: {eq: "en-US"}}) {
                 nodes {
                     id
                     artist {
