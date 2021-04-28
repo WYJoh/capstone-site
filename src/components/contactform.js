@@ -4,7 +4,7 @@ export default function Form() {
     return (
         <>
             <div className="formStyle">
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true" action="/thanks">
                     <div className="row">
                         <div className="col-12">
                             <label for="firstname">First Name
