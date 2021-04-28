@@ -9,12 +9,12 @@ export default function Home({ data }) {
   return (
     <Default>
 
-        <h2 className="homeh2">POPULAR THIS WEEK</h2>
+        <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
 
 
-      <div className="albumSlider">
+      <div className="albumSliderAlbum">
         {data.allContentfulAlbums.nodes.map(album => (
-          <Popular album={album}></Popular>
+          <Alltime album={album}></Alltime>
         ))}
       </div>
 
@@ -23,12 +23,12 @@ export default function Home({ data }) {
       </div>
 
 
-        <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
+        <h2 className="homeh2">THIS WEEK'S TOP ARTISTS</h2>
 
 
-      <div className="albumSlider">
-        {data.allContentfulAlbums.nodes.map(album => (
-          <Alltime album={album}></Alltime>
+      <div className="albumSliderArtist">
+        {data.allContentfulArtist.nodes.map(artist => (
+          <Popular artist={artist}></Popular>
         ))}
       </div>
     </Default>
@@ -70,6 +70,27 @@ query MyQuery {
         }
       }
       rating
+    }
+  }
+  allContentfulArtist(filter: {rating: {lte: 10}, node_locale: {eq: "en-US"}}) {
+    nodes {
+      artist
+      id
+      image {
+        file {
+          url
+        }
+      }
+      albums {
+        id
+        title
+        year
+        cover {
+          file {
+            url
+          }
+        }
+      }
     }
   }
 }

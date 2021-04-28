@@ -123,30 +123,43 @@ body {
 }
 
 // SLIDER
-.albumSlider {
+.albumSliderAlbum {
     background-color: $secondarylight;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     height: 340px;
-    //border-top: $headingdark solid 10px;
     border-right: $headingdark solid 10px;
-    //border-bottom: $headingdark solid 10px;
     border-left: $headingdark solid 10px;
     margin: 0 20px 20px;
     padding: 20px 0 20px 10px;
 }
-.albumSlider::-webkit-scrollbar {
+.albumSliderArtist {
+    background-color: $secondarylight;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 280px;
+    border-right: $headingdark solid 10px;
+    border-left: $headingdark solid 10px;
+    margin: 0 20px 20px;
+    padding: 20px 0 20px 10px;
+}
+.albumSliderAlbum::-webkit-scrollbar,
+.albumSliderArtist::-webkit-scrollbar {
     width: 10px;
 }
-.albumSlider::-webkit-scrollbar-thumb {
+.albumSliderAlbum::-webkit-scrollbar-thumb,
+.albumSliderArtist::-webkit-scrollbar-thumb {
     background: $maindark;
     border-radius: 1em;
 }
-.albumSlider::-webkit-scrollbar-thumb:hover {
+.albumSliderAlbum::-webkit-scrollbar-thumb:hover,
+.albumSliderArtist::-webkit-scrollbar-thumb:hover {
     background: $maindarkhover;
 }
-.albumSlider::-webkit-scrollbar-track {
+.albumSliderAlbum::-webkit-scrollbar-track,
+.albumSliderArtist::-webkit-scrollbar-track {
     background: $secondarymedium;
 }
 .itemslider {
