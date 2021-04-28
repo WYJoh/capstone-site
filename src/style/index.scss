@@ -144,7 +144,7 @@ body {
     border-radius: 1em;
 }
 .albumSlider::-webkit-scrollbar-thumb:hover {
-    background: $maidarkhover;
+    background: $maindarkhover;
 }
 .albumSlider::-webkit-scrollbar-track {
     background: $secondarymedium;
@@ -349,6 +349,11 @@ p {
 .albumDesc:hover {
     color: $maindark;
 }
+.albumDescAlt {
+    font-family: $primaryfont;
+    font-size: 25px;
+    text-align: left;
+}
 hr {
     border-color: $secondarydark;
     border-width: 1px;
@@ -378,7 +383,7 @@ hr {
     border-radius: 1em;
 }
 .albumTracklist::-webkit-scrollbar-thumb:hover {
-    background: $maidarkhover;
+    background: $maindarkhover;
 }
 .albumTracklist::-webkit-scrollbar-track {
     background: $secondarytrack;
@@ -387,11 +392,11 @@ hr {
 .faStar {
     font-size: 30px;
 }
-.rateAlbum:not(:checked) > input {
+.rateAlbum > input {
     position: absolute;
     top: -9999px;
 }
-.rateAlbum:not(:checked) > label {
+.rateAlbum > label {
     width: 35px;
     overflow: hidden;
     white-space: nowrap;
@@ -401,8 +406,8 @@ hr {
 .rateAlbum > input:checked ~ label {
     color: $buttonchecked;
 }
-.rateAlbum:not(:checked) > label:hover,
-.rateAlbum:not(:checked) > label:hover ~ label {
+.rateAlbum > label:hover,
+.rateAlbum > label:hover ~ label {
     color: $button;
 }
 
@@ -426,6 +431,66 @@ hr {
     border-style: solid;
     border-width: 3px;
     margin: 0 10px;
+}
+.artistAlbumAlignOuter {
+    text-align: center;
+    display: block;
+}
+.artistAlbumAlignInner {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.artistAlbumTitle {
+    font-size: 35px;
+    color: $mainlight;
+    font-family: $primaryfont;
+    background-color: $headingdark;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+.artistAlbumListOuter {
+    background-color: $secondarylight;
+    border-right: $headingdark solid 5px;
+    border-left: $headingdark solid 5px;
+    margin-left: 0;
+    padding-left: 30px;
+    width: 600px;
+}
+.artistAlbumListInner {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.artistAlbumImg {
+    height: 150px;
+    width: 150px;
+    border-color: $black;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 15px;
+}
+.artistAlbumList1 {
+    color: $black;
+    font-family: $secondaryfont;
+    font-size: 23px;
+    text-align: left;
+    margin-top: 5px;
+}
+.artistAlbumList1:hover {
+    color: $maindark;
+}
+.artistAlbumList2 {
+    color: $black;
+    font-family: $secondaryfont;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 // SEARCH
@@ -473,7 +538,7 @@ hr {
     padding: 10px 15px;
 }
 .searchButton:hover {
-    background-color: $maidarkhover;
+    background-color: $maindarkhover;
 }
 
 // CONTACT

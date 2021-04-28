@@ -37,7 +37,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query MyQuery {
-  allContentfulAlbums {
+  allContentfulAlbums (filter: {rating: {eq: 5}, node_locale: {eq: "en-US"}}) {
     nodes {
       id
       artist {
