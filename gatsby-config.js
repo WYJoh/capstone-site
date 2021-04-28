@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Disc Hierarchy",
+    siteUrl: "https://app.netlify.com/sites/confident-newton-9e2b70",
   },
   plugins: [
     {
