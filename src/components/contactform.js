@@ -5,6 +5,8 @@ export default function Form() {
         <>
             <div className="formStyle">
                 <form name="contact" method="POST" data-netlify="true" action="/thanks">
+
+                <input type="hidden" name="form-name" value="contact" />
                     <div className="row">
                         <div className="col-12">
                             <label for="firstname">First Name
