@@ -22,7 +22,7 @@ export default function Form() {
                     <div className="row">
                         <div className="col-12">
                             <label for="email">Email
-                                <input type="text" id="email" name="email" placeholder="email@contact.net" required className="form-control" />
+                                <input type="text" id="email" name="email" placeholder="contact@email.net" required className="form-control" />
                             </label>
 
                             <label for="phone">Phone

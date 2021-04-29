@@ -248,10 +248,10 @@ p {
     }
 }
 .topNavRight {
-    font-size: 27px;
+    font-size: 30px;
     float: right;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right: 40px;
 }
 
@@ -311,6 +311,7 @@ p {
     font-family: $primaryfont;
     font-size: 15px;
     background-color: $button;
+    border-color: $button;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -321,7 +322,7 @@ p {
 .contactButton:hover {
     color: $button;
     background-color: $mainlight;
-    border-color: $button;
+    border-style: solid;
     transition: 0.3s ease-out;
 }
 
@@ -535,39 +536,51 @@ hr {
 .returnHome:hover {
     color: $secondarydark;
 }
-.bodySearch {
+.searchh1 {
+    font-size: 50px;
+    color: $headingdark;
+    font-family: $primaryfont;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+.searchh2 {
+    font-size: 45px;
+    color: $mainlight;
+    font-family: $primaryfont;
+    background-color: $headingdark;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+.searchAlignOuter {
+    text-align: center;
+    display: block;
+}
+.searchAlignInner {
+    display: inline-block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
-.barSearch {
-    width: 450px;
-    color: $black;
-    background-color: $mainlight;
+.searchInner {
+    background-color: $secondarylight;
+    border-right: $headingdark solid 5px;
+    border-left: $headingdark solid 5px;
+    margin-left: 15px;
+    padding: 5px 0 5px 30px;
+    width: 600px;
+}
+.searchArtist {
     font-family: $primaryfont;
-    font-size: 25px;
-    border-color: $black;
-    border-radius: 8px;
-    border-style: solid;
-    margin-top: 200px;
-    padding: 10px 15px;
+    font-size: 30px;
+    text-align: left;
 }
-.barSearch:focus {
-    outline: none;
-}
-.searchButton {
-    color: $mainlight;
-    background-color: $maindark;
-    font-family: $primaryfont;
-    font-size: 25px;
-    border-color: $black;
-    border-radius: 8px;
-    border-style: solid;
-    margin-left: 5px;
-    padding: 10px 15px;
-}
-.searchButton:hover {
-    background-color: $maindarkhover;
+.searchArtist:hover {
+    color: $maindark;
 }
 
 // CONTACT

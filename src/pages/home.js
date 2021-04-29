@@ -1,6 +1,7 @@
 import * as React from "react"
 import Default from "../layouts/default.js"
 import Popular from "../components/popularlist.js"
+import Random from "../components/randomizer.js"
 import Alltime from "../components/alltimelist.js"
 import '../style/index.scss';
 import { graphql } from "gatsby"
@@ -19,7 +20,7 @@ export default function Home({ data }) {
       </div>
 
       <div className="text-center">
-        <button className="randomizerButton">GENERATE RANDOM ALBUM</button>
+          <Random></Random>
       </div>
 
 
@@ -37,7 +38,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query MyQuery {
-  allContentfulAlbums (filter: {rating: {eq: 5}, node_locale: {eq: "en-US"}}) {
+  allContentfulAlbums (filter: {rating: {eq: 5}, node_locale: {eq: "en-US" }}) {
     nodes {
       id
       artist {
@@ -72,7 +73,7 @@ query MyQuery {
       rating
     }
   }
-  allContentfulArtist(filter: {rating: {lte: 10}, node_locale: {eq: "en-US"}}) {
+  allContentfulArtist(filter: {rating: {lte: 10}, node_locale: {eq: "en-US" }}) {
     nodes {
       artist
       id
