@@ -4,8 +4,6 @@ import { FaStar } from "@react-icons/all-files/fa/FaStar";
 import { Link } from "gatsby"
 
 export default function Album({ pageContext }) {
-    const widget = document.querySelector(".starIcon");
-
     const { album } = pageContext;
     return (
         <Default>
