@@ -11,7 +11,7 @@ export default function Album({ pageContext }) {
 
             <div className="albumStyle">
                 <div className="albumStyleInner">
-                    <div className="row">
+                    <div className="row albumCenterSm">
                         <img className="albumImgLg" src={album.cover.file.url} alt={album.title} />
 
                         <div className="rightCenterAlbum">

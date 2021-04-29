@@ -23,7 +23,7 @@ export default function Header() {
                 <ul className="topNavRight">
                     <li>
                         <Link to="/search">
-                            <FaSearch />
+                            <FaSearch className="searchIconSm" />
                         </Link>
                     </li>
                 </ul>
