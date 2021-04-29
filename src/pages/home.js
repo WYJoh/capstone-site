@@ -1,16 +1,16 @@
 import * as React from "react"
 import Default from "../layouts/default.js"
 import Popular from "../components/popularlist.js"
-import Random from "../components/randomizer.js"
 import Alltime from "../components/alltimelist.js"
+import { FaMusic } from "@react-icons/all-files/fa/FaMusic";
 import '../style/index.scss';
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default function Home({ data }) {
   return (
     <Default>
 
-        <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
+      <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
 
 
       <div className="albumSliderAlbum">
@@ -20,12 +20,14 @@ export default function Home({ data }) {
       </div>
 
       <div className="text-center">
-          <Random></Random>
+        <Link to="/search">
+          <button className="searchButton">
+            <FaMusic className="musicIcon" /><b> MUSIC LIBRARY </b><FaMusic className="musicIcon" />
+          </button>
+        </Link>
       </div>
 
-
-        <h2 className="homeh2">THIS WEEK'S TOP ARTISTS</h2>
-
+      <h2 className="homeh2">THIS WEEK'S TOP ARTISTS</h2>
 
       <div className="albumSliderArtist">
         {data.allContentfulArtist.nodes.map(artist => (

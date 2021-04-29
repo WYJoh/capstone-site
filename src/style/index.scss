@@ -288,23 +288,28 @@ p {
 }
 
 // BUTTONS
-.randomizerButton {
+.searchButton {
     color: $button;
     font-family: $primaryfont;
-    font-size: 30px;
+    font-size: 35px;
     background-color: $mainlight;
     border-color: $button;
     border-radius: 8px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     margin: 30px 0;
     padding: 10px 20px;
     transition: 0.3s ease-out;
 }
-.randomizerButton:hover {
+.searchButton:hover {
     color: $mainlight;
     background-color: $button;
     transition: 0.3s ease-out;
+}
+.musicIcon {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
 }
 .contactButton {
     color: $mainlight;
@@ -544,11 +549,23 @@ hr {
     letter-spacing: 3px;
     margin-top: 20px;
 }
-.searchh2 {
+.searchh2Left {
     font-size: 45px;
     color: $mainlight;
     font-family: $primaryfont;
     background-color: $headingdark;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+}
+.searchh2Right {
+    font-size: 45px;
+    color: $mainlight;
+    font-family: $primaryfont;
+    background-color: $headingred;
     letter-spacing: 1.5px;
     margin-top: 20px;
     margin-bottom: 0;
@@ -566,7 +583,13 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-.searchInner {
+.searchLeft {
+    margin-right: 10px;
+}
+.searchRight {
+    margin-left: 10px;
+}
+.searchInnerLeft {
     background-color: $secondarylight;
     border-right: $headingdark solid 5px;
     border-left: $headingdark solid 5px;
@@ -574,12 +597,29 @@ hr {
     padding: 5px 0 5px 30px;
     width: 600px;
 }
+.searchInnerRight {
+    background-color: $lightred;
+    border-right: $headingred solid 5px;
+    border-left: $headingred solid 5px;
+    margin-left: 15px;
+    padding: 5px 0 5px 30px;
+    width: 600px;
+    column-count: 2;
+}
 .searchArtist {
     font-family: $primaryfont;
     font-size: 30px;
     text-align: left;
 }
 .searchArtist:hover {
+    color: $maindark;
+}
+.searchAlbum {
+    font-family: $primaryfont;
+    font-size: 20px;
+    text-align: left;
+}
+.searchAlbum:hover {
     color: $maindark;
 }
 
