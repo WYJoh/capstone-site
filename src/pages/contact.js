@@ -7,15 +7,15 @@ export default function Contact() {
     return (
         <Default>
             <Container>
-                <h2 className="contacth2">ABOUT US</h2>
+                <h2 className="contacth2"><b>CelestialCulture</b> - ABOUT US</h2>
             </Container>
             <div className="container">
                 <div className="row contactAlign">
                     <div className="col-lg-4 col-sm-12">
-                        <img src="https://via.placeholder.com/350" alt="Disc Hierarchy HQ" />
+                        <img className="contactImg" src="https://static.dezeen.com/uploads/2021/01/tower-c-zaha-hadid-architects-shenzhen-architecture-supertall-skyscrapers_dezeen_2364_sq2.jpg" alt="Disc Hierarchy HQ" />
                     </div>
                     <div className="col-lg-8 col-sm-12">
-                        <p className="contactDesc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className="contactDesc">Welcome to our site! At <b>CelestialCulture</b>, we're a fast-growing software company looking to provide users with the most entertaining content on the web. We have developed many interactive tech sites in recent years, from writing video game reviews to generating movie randomizers and even sharing/collaborating personal songs with the rest of the world! Here at <b>CelestialCulture</b>, we want our users to feel at home. If you have any questions, we'd be happy to hear from you. Please let us know down below.</p>
                     </div>
                 </div>
             </div>

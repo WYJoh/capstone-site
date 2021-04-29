@@ -618,6 +618,13 @@ hr {
 }
 
 // CONTACT
+.contactImg {
+    height: 350px;
+    width: 350px;
+    border-color: $black;
+    border-style: solid;
+    border-width: 1px;
+}
 .contactDesc {
     color: $black;
     font-family: $primaryfont;
