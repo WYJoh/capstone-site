@@ -47,7 +47,10 @@ export default function Search({ data }) {
 
 export const query = graphql`
 query MyQuery2 {
-    allContentfulArtist(filter: {node_locale: {eq: "en-US" }}) {
+    allContentfulArtist(
+        filter: {node_locale: {eq: "en-US" }}
+        sort: {fields: artist, order: ASC}
+        ) {
         nodes {
             artist
             id
@@ -68,7 +71,10 @@ query MyQuery2 {
             }
         }
     }
-    allContentfulAlbums (filter: {node_locale: {eq: "en-US" }}) {
+    allContentfulAlbums (
+        filter: {node_locale: {eq: "en-US" }}
+        sort: {fields: title, order: ASC}
+    ) {
         nodes {
             id
             artist {
