@@ -139,7 +139,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    height: 280px;
+    height: 275px;
     border-right: $headingdark solid 10px;
     border-left: $headingdark solid 10px;
     margin: 0 20px 20px;
@@ -407,27 +407,37 @@ hr {
 .albumTracklist::-webkit-scrollbar-track {
     background: $secondarytrack;
 }
-
-.faStar {
-    font-size: 30px;
+.starIcon {
+    text-align: center;
+    transform: rotateY(180deg);
 }
-.rateAlbum > input {
-    position: absolute;
-    top: -9999px;
+.starIcon input{
+    display: none;
 }
-.rateAlbum > label {
-    width: 35px;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 30px;
-    color: $secondarydark;
+.starIcon label{
+    font-size: 38px;
+    border-color: $black;
+    padding: 5px;
+    transition: all 0.2s ease;
 }
-.rateAlbum > input:checked ~ label {
-    color: $buttonchecked;
+.starInput:not(:checked) ~ label:hover,
+.starInput:not(:checked) ~ label:hover ~ label{
+    color: $starhover;
 }
-.rateAlbum > label:hover,
-.rateAlbum > label:hover ~ label {
-    color: $button;
+.starInput#rate-1:checked ~ label{
+    color: $star;
+}
+.starInput#rate-2:checked ~ label{
+    color: $star;
+}
+.starInput#rate-3:checked ~ label{
+    color: $star;
+}
+.starInput#rate-4:checked ~ label{
+    color: $star;
+}
+.starInput#rate-5:checked ~ label{
+    color: $star5;
 }
 
 // ARTIST

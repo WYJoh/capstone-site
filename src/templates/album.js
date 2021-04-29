@@ -4,6 +4,8 @@ import { FaStar } from "@react-icons/all-files/fa/FaStar";
 import { Link } from "gatsby"
 
 export default function Album({ pageContext }) {
+    const widget = document.querySelector(".starIcon");
+
     const { album } = pageContext;
     return (
         <Default>
@@ -29,35 +31,18 @@ export default function Album({ pageContext }) {
                 </div>
             </div>
 
-            <div className="text-center rateAlbum">
-                <label for="1star" title="text">
-                    <input type="radio" className="1star" name="rate" value="1" style={{ display: 'none' }} />
-                    <FaStar className="faStar" />
-                </label>
-                
-
-                <label for="2star" title="text">
-                    <input type="radio" className="2star" name="rate" value="2" style={{ display: 'none' }} />
-                    <FaStar className="faStar" />
-                </label>
-                
-
-                <label for="3star" title="text">
-                    <input type="radio" className="3star" name="rate" value="3" style={{ display: 'none' }} />
-                    <FaStar className="faStar" />
-                </label>
-                
-
-                <label for="4star" title="text">
-                    <input type="radio" className="4star" name="rate" value="4" style={{ display: 'none' }} />
-                    <FaStar className="faStar" />
-                </label>
-
-                <label for="5star" title="text">
-                    <input type="radio" className="5star" name="rate" value="5" style={{ display: 'none' }} />
-                    <FaStar className="faStar" />
-                    </label>
-                
+            <div class="starIcon">
+                <input className="starInput" type="radio" name="rate" id="rate-5" />
+                <label for="rate-5" class="fas fa-star"><FaStar /></label>
+                <input className="starInput" type="radio" name="rate" id="rate-4" />
+                <label for="rate-4" class="fas fa-star"><FaStar /></label>
+                <input className="starInput" type="radio" name="rate" id="rate-3" />
+                <label for="rate-3" class="fas fa-star"><FaStar /></label>
+                <input className="starInput" type="radio" name="rate" id="rate-2" />
+                <label for="rate-2" class="fas fa-star"><FaStar /></label>
+                <input className="starInput" type="radio" name="rate" id="rate-1" />
+                <label for="rate-1" class="fas fa-star"><FaStar /></label>
+                <form action="#"></form>
             </div>
         </Default>
     )
