@@ -557,7 +557,7 @@ hr {
     letter-spacing: 1.5px;
     margin-top: 20px;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 5px;
     padding: 0 20px 0 20px;
     display: inline-block;
 }
@@ -569,7 +569,7 @@ hr {
     letter-spacing: 1.5px;
     margin-top: 20px;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 5px;
     padding: 0 20px 0 20px;
     display: inline-block;
 }
@@ -584,16 +584,15 @@ hr {
     margin-right: auto;
 }
 .searchLeft {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .searchRight {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .searchInnerLeft {
     background-color: $secondarylight;
     border-right: $headingdark solid 5px;
     border-left: $headingdark solid 5px;
-    margin-left: 15px;
     padding: 5px 0 5px 30px;
     width: 600px;
 }
@@ -601,10 +600,9 @@ hr {
     background-color: $lightred;
     border-right: $headingred solid 5px;
     border-left: $headingred solid 5px;
-    margin-left: 15px;
-    padding: 5px 0 5px 30px;
+    padding: 5px 15px;
     width: 600px;
-    column-count: 2;
+    column-count: 3;
 }
 .searchArtist {
     font-family: $primaryfont;
