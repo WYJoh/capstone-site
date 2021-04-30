@@ -2,10 +2,16 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Default from "../layouts/default"
+import { Helmet } from "react-helmet"
 
 export default function Search({ data }) {
     return (
         <>
+            <Helmet>
+                <title>Explore All Artists and Albums - Disc Hierarchy</title>
+                <meta name="description" value="Always wanted to rate your favorite albums? You've found the right place!" />
+            </Helmet>
+
             <Default>
                 <h1 className="searchh1"><b>LIBRARY</b></h1>
 

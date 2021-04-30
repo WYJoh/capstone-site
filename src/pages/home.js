@@ -5,36 +5,43 @@ import Alltime from "../components/alltimelist.js"
 import { FaMusic } from "@react-icons/all-files/fa/FaMusic";
 import '../style/index.scss';
 import { graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 export default function Home({ data }) {
   return (
-    <Default>
+    <>
+      <Helmet>
+        <title>Rate Your Favorite Albums (Home) - Disc Hierarchy</title>
+        <meta name="description" value="Always wanted to rate your favorite albums? You've found the right place!" />
+      </Helmet>
 
-      <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
+      <Default>
 
+        <h2 className="homeh2">HIGHEST RATED ALL-TIME</h2>
 
-      <div className="albumSliderAlbum">
-        {data.allContentfulAlbums.nodes.map(album => (
-          <Alltime album={album}></Alltime>
-        ))}
-      </div>
+        <div className="albumSliderAlbum">
+          {data.allContentfulAlbums.nodes.map(album => (
+            <Alltime album={album}></Alltime>
+          ))}
+        </div>
 
-      <div className="text-center">
-        <Link to="/search">
-          <button className="searchButton">
-            <FaMusic className="musicIcon" /><b> MUSIC LIBRARY </b><FaMusic className="musicIcon" />
-          </button>
-        </Link>
-      </div>
+        <div className="text-center">
+          <Link to="/search">
+            <button className="searchButton">
+              <FaMusic className="musicIcon" /><b> MUSIC LIBRARY </b><FaMusic className="musicIcon" />
+            </button>
+          </Link>
+        </div>
 
-      <h2 className="homeh2">THIS WEEK'S TOP ARTISTS</h2>
+        <h2 className="homeh2">THIS WEEK'S TOP ARTISTS</h2>
 
-      <div className="albumSliderArtist">
-        {data.allContentfulArtist.nodes.map(artist => (
-          <Popular artist={artist}></Popular>
-        ))}
-      </div>
-    </Default>
+        <div className="albumSliderArtist">
+          {data.allContentfulArtist.nodes.map(artist => (
+            <Popular artist={artist}></Popular>
+          ))}
+        </div>
+      </Default>
+    </>
   )
 }
 
